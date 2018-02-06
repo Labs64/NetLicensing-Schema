@@ -1,0 +1,15 @@
+<netlicensing xmlns="http://netlicensing.labs64.com/schema/context" ttl="2015-11-03T15:02:36.137Z">
+  <items>
+    <item type="ProductModuleValidation">
+      <property name="productModuleNumber">M011</property>
+      <property name="productModuleName">Terminal Devices</property>
+      <property name="licensingModel">Rental</property>
+      <list name="L011">
+        <property name="valid">false</property>
+      </list>
+      <list name="L012">
+        <property name="valid">false</property>
+      </list>
+    </item>
+  </items>
+</netlicensing>
