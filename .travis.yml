@@ -1,0 +1,10 @@
+language: java
+addons:
+  apt:
+    packages:
+    - libxml2
+    - libxml2-dev
+    - libxml2-utils
+script:
+- xmllint --noout netlicensing-context.xsd
+- xmllint --noout --schema netlicensing-context.xsd src/test/resources/2.1/validate.xml
