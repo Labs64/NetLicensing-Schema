@@ -1,10 +1,15 @@
 language: java
+
 addons:
   apt:
     packages:
     - libxml2
     - libxml2-dev
     - libxml2-utils
+
+env:
+  - CURRENT_VERSION=2.1
+
 script:
-- xmllint --noout netlicensing-context.xsd
-- xmllint --noout --schema netlicensing-context.xsd src/test/resources/2.1/validate.xml
+  - xmllint --noout src/main/resources/$CURRENT_VERSION/netlicensing-context.xsd
+  - xmllint --noout --schema src/main/resources/$CURRENT_VERSION/netlicensing-context.xsd src/test/resources/$CURRENT_VERSION/validate.xml
